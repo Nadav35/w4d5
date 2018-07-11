@@ -1,0 +1,33 @@
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"> <h2><%= @cat.name %></h2></th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>Age:</td>
+      <td><%= @cat.age %></td>
+    </tr>
+    <tr>
+      <td>Sex:</td>
+      <td><%= @cat.sex %></td>
+    </tr>
+    <tr>
+      <td>Color:</td>
+      <td><%= @cat.color %></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><%= @cat.description %></td>
+    </tr>
+  </tbody>
+  
+  <tfoot>
+    <tr>
+    <td colspan="2"><a href="<%= cats_url %>">All Kitties!</a></td>
+  </tr>
+  </tfoot>
+</table>

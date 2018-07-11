@@ -1,0 +1,12 @@
+<h1>All the kitties!!</h1>
+
+<%@cats.each do |cat| %>
+<h3><%= cat.name %></h3>
+<ul>
+  <li><%= cat.age %></li>
+  <li><%= cat.sex %></li>
+  <li><%= cat.color %></li>
+  <li><p><%= cat.description %></p></li>
+  <li><a href="<%= cat_url(cat) %>">link</a></li>
+</ul>
+<%end %>
